@@ -1,0 +1,10 @@
+Virtual DOM -> a tree structure created by React which is a copy of actual DOM.
+React dont use it extensively anymore.
+React uses diff one tree with another to determine which parts of DOM need to be changed. (reconciliation).
+
+React Fiber -> its a "reimplmentation" of Virtual DOM.
+instead of updating DOM in a single step it now updates it in chunks.
+this algorithm gives you ability to Pause, Abort, Reuse work and also to assign priority to different types of updates.
+that is the reason sometimes we get buttons first but they are not functional for few seconds then Javascript is injected into those components. (Hydration)
+instead of changing every small change it changes a chunk of change at once in the virtual DOM. (concurrency).
+"keys" are useful in lists for rendering fast and improve performance of "React Fibre". keys should be Stable, Predictable and unique.
