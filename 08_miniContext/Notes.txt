@@ -1,0 +1,4 @@
+-> Create a context folder. this'll be containing all contexts
+-> Create "UserContext.js" and use "React.createContext() method"
+-> *Context is a provider where it provides data by wrappin them inside it
+-> Create a "userContextProvider.jsx"
